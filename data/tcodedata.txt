@@ -1,0 +1,21 @@
+Process:
+    ID: 30011
+    Filling control: 10109
+    Injection time: 10100
+    Velocity/pressure switch-over: 10310
+    Packing pressure: 10707
+    Melt temperature: 11002
+    Mold temperature: 11108
+    Cooling time control: 11109
+    Cooling time: 10102
+
+Thermoplastic:
+    ID: 21000
+    Ci for MRD: 3622
+    D3 for MRD: 3624
+    Fiber orientation model: 3626
+
+Valve gate controller:
+    ID: 30030
+    Valve gate control by: 10221
+    Valve gate control at node: 10222
