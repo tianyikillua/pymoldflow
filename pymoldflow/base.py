@@ -18,9 +18,17 @@ class MoldflowAutomation:
         self.studymod_exe = os.path.join(self.moldflow_path, "bin", "studymod.exe")
         self.runstudy_exe = os.path.join(self.moldflow_path, "bin", "runstudy.exe")
         self.studyrlt_exe = os.path.join(self.moldflow_path, "bin", "studyrlt.exe")
-        assert os.path.isfile(self.studymod_exe)
-        assert os.path.isfile(self.runstudy_exe)
-        assert os.path.isfile(self.studyrlt_exe)
+
+    def check_moldflow_path(self):
+        """
+        Check if the official Moldflow automation utility programs ``studymod``,
+        ``runstudy`` and ``studyrlt`` exist
+        """
+        return (
+            os.path.isfile(self.studymod_exe)
+            and os.path.isfile(self.runstudy_exe)
+            and os.path.isfile(self.studyrlt_exe)
+        )
 
     def _print(self, blabla):
         if self.verbose:
