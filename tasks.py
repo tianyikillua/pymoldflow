@@ -1,8 +1,9 @@
 import platform
 import shutil
-import pymoldflow
 
 from invoke import task
+
+import pymoldflow
 
 VERSION = pymoldflow.__version__
 
